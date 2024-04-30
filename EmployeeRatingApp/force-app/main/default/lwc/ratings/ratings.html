@@ -1,0 +1,37 @@
+<template>
+    
+    <div>
+        <lightning-input label="Name" onchange={handleName} role="combobox"></lightning-input>
+    </div>
+
+    <lightning-combobox
+
+        name="company"
+
+        label="Company"
+
+        placeholder="Select Company"
+
+        value={value}
+
+        options={companyOptions}
+
+        onchange={handleCompanyChange} >
+
+    </lightning-combobox>
+    
+    <lightning-combobox 
+    name="rating"
+    label="Rating"
+    value={value}
+    placeholder="Select Rating" 
+    onchange={handleChange}
+    options={ratings}>
+    </lightning-combobox>
+    <br>
+    <div>
+        <lightning-button label="Create Employee" onclick={handleCreate}></lightning-button>
+    </div>
+    
+    
+</template>
